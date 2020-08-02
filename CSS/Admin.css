@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    background-image: url(b2.jpg);
+    background-position: center;
+}
+
+.title
+{
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.title h1{
+    color: midnightblue;
+    margin-bottom: 30px;
+}
+
+.pur
+{
+    border-radius:20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 0.5px solid rgb(9, 9, 9);
+    outline: none;
+    box-shadow: 0 2.5px 7.5px rgba(0,0,0,0.5);
+}
+
+input{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: dodgerblue;
+
+}
+
