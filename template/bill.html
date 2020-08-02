@@ -1,0 +1,29 @@
+<html>
+<head>
+      <title>BILL</title>
+          <link rel="stylesheet" href="/static/css/SignIn.css" />
+    </head>
+<body>
+      <p>The order for indent has been approved by mms employee and has been placed with the {{v_name1}}.<p>
+      <p>The items are expected to arrive at specified venue from where you are requested to collect it.<p>s
+    Detailsof your Indent is as follows:
+    <table border="1">
+        <tr>
+            <th> Indent Id </th>
+            <th> Handle name</th>
+            <th>expected time</th>
+            <th> Vendor name</th>
+        </tr>
+        <tr>
+            <td>{{f_id}}</td>
+            <td>{{appr11}}</td>
+            <td>{{appr22}}</td>
+            <td>{{v_name1}}</td>
+        </tr>
+    </table>
+    <form method='post'>
+        <button type="submit" class="btn" name="OK1">back to category page of forms</button>
+        <button type="submit" class="btn" name="OK2">want to log out?click here</button>
+    </form>
+</body>
+</html>

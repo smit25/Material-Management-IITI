@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
+    <style type="text/css"></style>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/InLP.css" />
+
+    <meta name="description" content="Indent form for Direct purchase" />
+    <title> Indent form for LPC </title>
+</head>
+<body>
+    <div class="Bx4">
+    <!--<img src="IITI.png" height="200" width="200" />
+    <style ="float: right" margin-right: 10px; margin-left: 5px /> -->
+
+    <center>
+        <h1>
+            INDIAN INSTITUTE OF TECHNOLOGY INDORE
+        </h1>
+        <h3>
+            <u>
+                Format for Purchase Indent under LPC <br />
+                <i>(For purchase of goods valuing between Rs. 25,000/- to Rs. 2,00,000/-)</i>
+            </u>
+        </h3>
+    </center>
+    <hr />
+    <form method="post">
+      <b>  Department/Division:
+        <input type="text" name="Dept" /> <br /><br />
+        Name of Indentor:
+        <input type="text" name="Dept" />
+        Designation:
+        <input type="text" name="Desgn" /> <br /><br />
+        Indent Approving Authority :
+        <input type="text" name="IAA" />
+        Designation:
+        <input type="text" name="IAA_Desgn" /><br /><br />
+        Budget Type: <br /></b>
+        <input type="radio" name="budgetT" value="Plan" /> Plan <br>
+        <input type="radio" name="budgetT" value="Non-Plan" /> Non-Plan <br>
+        <input type="radio" name="budgetT" value="Departmental" /> Departmental <br>
+        <input type="radio" name="budgetT" value="Project" /> Project Funded by <input type="text" name="PFby" ><br><br>
+<b>
+        Total Estimated cost: INR
+        <input type="number" name="cost" min="25000" max="200000"/> <br /><br />
+        Items:<br>
+        Main-category:
+        <input type="text" name="itemname" placeholder="write item name">
+        <input type="text" name="brand" placeholder="write brand name">
+        <input type="number" name="quantity" placeholder="Enter quantity">
+        <input type="text" name="warrenty_period" placeholder="Enter warrenty period">
+        <br>
+        <br>
+        Sub-category:
+        <input type="text" name="subcat" placeholder ="write item specification">
+        <br>
+        <br>
+        Expected Delivery Terms:</b>
+            <input type="date" name="expecteddate"><br>
+        <ol>
+            <li> Venue (Point of Destination/Unloading/Installation) <input type="text" name="Venue" /> <br /></li>
+            <li> Specific Delivery Requirements such as unloading/storage/site preparation <input type="text" name="Requirements1" /> <br /></li>
+            <li> Other requirements, if any:  <input type="text" name="Requirements2" /> <br /></li>
+        </ol>
+       <b> Declaration:</b>
+        <center>
+        Availability of Item on <a href="https://gem.gov.in">GeM </a>
+                                <select>
+                                    <option value="Yes"> Yes </option>
+                                    <option value="No"> No </option>
+                                </select><br />
+        (If the Indented item is available on GeM, it is Mandatory to procure the item through GeM)<br />
+        User department should attach the screenshot of the item for further process.
+        </center><br>
+    <!-- <form>
+        vendors
+    </form> -->
+       <b> Local Purchase Comittee has been constituted with the following members: </b>
+        <ol>
+            <li> Name: <input type="text" name="Name1" /> (Convenor) </li>
+            <li> Name: <input type="text" name="Name2" /> (Member) </li>
+            <li> Name: <input type="text" name="Name3" /> (Member) </li>
+        </ol>
+       <b> Availabity of fund in budget:<br>
+        </b>
+            Allocated Budget <input type="number" name="alloted" /><br><br>
+            Total commitments till date <input type="number" name="commitments" /><br><br>
+            Available Budget <input type="number" name="Available" /><br><br>
+            Remarks <input type="text" name="Remarks" />
+        <br /><br>
+        <b>Fund Available for Indent: INR
+        <input type="number" name="Fund" /><br><br></b>
+    <center> <button type="submit" class="btn4"> Submit </button> </center>
+    </form></div>
+</body>
+</html>

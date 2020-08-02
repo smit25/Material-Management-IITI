@@ -1,0 +1,35 @@
+<html>
+  <head>
+  <link href="/static/css/signin.css" rel="stylesheet">
+
+</head>
+<body>
+	<table border="1">
+	    <tr>
+		    <th>indent_id</th>
+		    <th>indent_date</th>
+		    <th>handlename</th>
+		    <th>Designation</th>
+            <th>indent_approving</th>
+            <th>Budget_type</th>
+            <th>estimated_cost</th>
+            <th>expected_delivery_period</th>
+            <th>order_status</th>
+            <th>placing_date</th> 
+            <th></th>
+        </tr>
+        {% for form in forms %}
+        <tr>
+			{% for i in form %}
+			<td>{{i}}</td>
+			{% endfor %}
+			<form method = "post">
+			<th><input type ="submit" value ="{{form[0]}}" name = "place"> </th>
+		</tr>
+		
+			{% endfor %}
+		</form>
+		</tr>
+    </table>
+	</body>
+</html>
