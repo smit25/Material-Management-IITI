@@ -374,10 +374,10 @@ def placeorder_localpurchase():
 	v_name=cur.fetchall()
 	print(v_name[0][0])
 	connection.commit()
-	print("AAAAAAA")
+	//print("AAAAAAA")
 	cur.execute("UPDATE indentor SET checkr = true where indent_id = '"+f_id+"';")
 	connection.commit()
-	print("AAAAAAA")
+	//print("AAAAAAA")
 	if request.method=='POST':
 		if 'approve' in request.form:
 			return redirect(url_for('approval',appr1=appr1[0][0], appr2=appr2[0][0],f_id=f_id,v_name=v_name[0][0]))
@@ -428,7 +428,7 @@ def placeorder_gem():
 			appr11= cur.fetchall()
 			cur.execute("SELECT vendor_name from vendor where indent_id = '"+f_id+"';")
 			v_name1=cur.fetchall()
-			print(v_name1[0])
+			//print(v_name1[0])
 			cur.execute("UPDATE indentor SET checkr = true where indent_id = '"+f_id+"';")
 			connection.commit()
 			cur.execute("UPDATE indentor SET order_date = CURDATE() where indent_id = '"+f_id+"';")
